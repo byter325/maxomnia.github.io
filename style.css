@@ -26,10 +26,10 @@ li a:hover {
     background-color: #111;
 }
 .active {
-    background-color: #04AA6D;
+    background-color: #1d6bdf;
 }
 th{
-    background-color: #04AA6D;
+    background-color: #1d6bdf;
     color: white;
 }
 th, td{
