@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <script src="./parking.js"></script>
+</head>
+<nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/projects/parking.html" class="active">KA Parking API</a></li>
+        <li><a href="https://www.github.com/maxomnia/rapla_google_calendar/">Uni Google Calendar</a></li>
+        <li style="float:right"><a href="https://www.github.com/maxomnia">GitHub</a></li>
+    </ul>
+</nav>
+
+<body onload="getParkingJSON();">
+    <header style="margin-top: 2%;">
+        <h1>Karlsruhe Parking Spaces API</h1>
+    </header>
+    <h2>What does it do?</h2>
+    <p>
+        This JSON-based API can give you data on available parking spaces in downtown Karlsruhe, Germany.
+        It's not updated regularly as I only created this to test if I could host an API on here.
+    </p>
+    <h3>JSON Data</h3>
+    <p>This is what the data looks like. Nothing fancy but enough to calculate how many horses you could fit into Karlsruhe's parking spaces. 
+        <br/>
+        <a href="../data.json">Click here</a> to go directly to the JSON data. No
+        coming back though!</p>
+    <!--<iframe src="../data.json" title="This is what the JSON looks like" style="width: 95%; display: block; margin: 0 auto;">-->
+    <p id="date" style="margin-top: 2%;"></p>
+    <table id="jsonCode">
+        <tr>
+            <th>Name</th>
+            <th>Occupied</th>
+            <th>Total</th>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+</html>
