@@ -27,12 +27,23 @@ const Guides = () => {
   return (
     <div id="outer-container">
       <div className="header">
-        <h1>Guides</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/2702/2702134.png"></img>
+        <div id="header-text">
+          <h1>Guides</h1>
+          <p>
+            Here you can find guides on how to do stuff. Lorem ipsum dolor set
+            amit.
+          </p>
+        </div>
       </div>
       <div id="article-grid">
         {guides.map((guide) => (
-          <a href={"/guides/"+guide.id} key={`article-container-${guide.id}`}>
-            <div className={guide.large ? "flex-container large": "flex-container"}>
+          <a href={"/guides/" + guide.id} key={`article-container-${guide.id}`}>
+            <div
+              className={
+                guide.large ? "flex-container large" : "flex-container"
+              }
+            >
               <div className="flex-child flex-image">
                 <img src={guide.image}></img>
               </div>
