@@ -1,0 +1,120 @@
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-child {
+  padding: 0;
+}
+
+#outer-container {
+  width: 80%;
+  margin: auto;
+}
+
+#article-grid {
+  width: 50%;
+  margin: auto;
+  display: flex-block;
+}
+
+#article-grid .flex-container {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px 10px 10px 10px;
+  /* transition: margin 0.2s ease-in-out; */
+  transition: 0.2s ease-in-out;
+}
+
+#article-grid .flex-container.large img {
+  width: 300px;
+}
+
+#article-grid a{
+    text-decoration: none;
+    color: black;
+}
+
+#article-grid .flex-container img {
+  width: 200px;
+}
+
+#article-grid .flex-container:hover {
+  box-shadow: 5px 5px 5px lightgray;
+  /* margin-top: 2px; */
+  /* transition: margin 0.2 ease-in-out; */
+  margin-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.flex-child.flex-text {
+  padding-left: 10px;
+  height: 200px;
+}
+
+/* .flex-child.flex-image {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid green;
+  overflow: hidden;
+  margin: 0 auto; 
+} */
+
+#promoted-article {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+#promoted-article:hover {
+  box-shadow: 5px 5px 5px lightgray;
+  transition: box-shadow 0.2s ease-in-out;
+  /* margin-right: 2px;
+  transition: margin 0.2 ease-in-out; */
+}
+
+#promoted-article img {
+  float: left;
+  border-radius: 10px 0 0 10px;
+  width: 300px;
+}
+
+#promoted-article-text {
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  float: right;
+  background-color: rgb(228, 228, 228);
+  border-radius: 0 10px 10px 0;
+}
+
+#promoted-article-text h1 {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+#promoted-article-text p {
+  font-size: large;
+}
+
+.header {
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px 10px 10px 10px;
+  padding: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 22pt;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
