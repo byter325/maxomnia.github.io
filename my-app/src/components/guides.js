@@ -36,24 +36,50 @@ const Guides = () => {
           </p>
         </div>
       </div>
-      <div id="article-grid">
-        {guides.map((guide) => (
-          <a href={"/guides/" + guide.id} key={`article-container-${guide.id}`}>
-            <div
-              className={
-                guide.large ? "flex-container large" : "flex-container"
-              }
+      <div id="articles-container">
+        <div id="articles-filters">
+          <div>
+            <h2>Filters</h2>
+          </div>
+          <div className="filter">
+            <label>Category</label>
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
+          <div className="filter">
+            <label>Technology</label>
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div id="article-grid">
+          {guides.map((guide) => (
+            <a
+              href={"/guides/" + guide.id}
+              key={`article-container-${guide.id}`}
             >
-              <div className="flex-child flex-image">
-                <img src={guide.image}></img>
+              <div
+                className={
+                  guide.large ? "flex-container large" : "flex-container"
+                }
+              >
+                <div className="flex-child flex-image">
+                  <img src={guide.image}></img>
+                </div>
+                <div className="flex-child flex-text">
+                  <h1>{guide.title}</h1>
+                  <p>{guide.text}</p>
+                </div>
               </div>
-              <div className="flex-child flex-text">
-                <h1>{guide.title}</h1>
-                <p>{guide.text}</p>
-              </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

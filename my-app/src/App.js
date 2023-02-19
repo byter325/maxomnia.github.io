@@ -4,7 +4,7 @@ import Guides from "./components/guides";
 
 const App = () => {
     return (
-      <div>
+      <div style={{fontFamily: "sans-serif"}}>
         <Navbar />
         <Routes>
           <Route path="/guides" element={<Guides/>}></Route>
