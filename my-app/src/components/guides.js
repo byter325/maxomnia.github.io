@@ -22,6 +22,27 @@ const Guides = () => {
       text: "Lorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasd askdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö Lorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasdaskdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlföLorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasdaskdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö",
       large: false,
     },
+    {
+      id: 3,
+      title: "Some article 2",
+      image: "https://placehold.co/200",
+      text: "Lorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasd askdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö Lorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasdaskdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlföLorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasdaskdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö",
+      large: false,
+    },
+    {
+      id: 3,
+      title: "Some article 2",
+      image: "https://placehold.co/200",
+      text: "Lorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasd askdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö Lorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasdaskdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlföLorem ipsum dolor set amit sxcvbadfasd asdasdoasjd asdjasdjkasdaskdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö",
+      large: false,
+    },
+    {
+      id: 1,
+      title: "Some article",
+      image: "https://placehold.co/400",
+      text: "Lorem ipsum dolor set amit sxsssssss ssssdasdasdasdsa ssssssssssss sssssssssscvbadfasd sdasd asdasdoasjd asdjasdjkasd askdjakgalsdkj tphhkgjöf löldöaldöasf föjjähglhlfö",
+      large: true,
+    },
   ];
 
   return (
@@ -37,7 +58,7 @@ const Guides = () => {
         </div>
       </div>
       <div id="articles-container">
-        <div id="articles-filters">
+        {/* <div id="articles-filters">
           <div>
             <h2>Filters</h2>
           </div>
@@ -57,7 +78,7 @@ const Guides = () => {
               <option>Option 3</option>
             </select>
           </div>
-        </div>
+        </div> */}
         <div id="article-grid">
           {guides.map((guide) => (
             <a
